@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Tic Tac Toe game app</h1>
+      <div className="board"></div>
     </div>
   );
 }
