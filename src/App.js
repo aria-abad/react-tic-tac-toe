@@ -4,7 +4,7 @@ function App() {
 
   const [board, setBoard] = useState(["0", "1", "2", "3", "4", "5", "6", "7", "8"])
 
-  function testFunc(id) {
+  const testFunc = id => {
     console.log("id:", id)
     console.log(board)
     console.log(board[id])
@@ -13,6 +13,7 @@ function App() {
     console.log(temp);
     setBoard(temp);
     console.log(board);
+    // window.location.reload();
   }
   
   return (
