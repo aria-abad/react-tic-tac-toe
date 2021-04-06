@@ -19,7 +19,10 @@ function App() {
     <div className="App">
       <div className="board">
         {board.map((square, id) => {
-          return (<button className={`square square${id}`} key={id} onClick={() => setBoard([board[id]='x'])}> {square} </button>)
+          return (<button className={`square square${id}`} key={id} onClick={() => {
+            board[id] = 'x'
+            setBoard([...board])
+          }}> {square} </button>)
         })}
       </div>
     </div>
