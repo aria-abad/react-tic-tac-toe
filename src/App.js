@@ -11,6 +11,7 @@ function App() {
         {board.map((square, id) => {
           return (<div className={`square square${id}`} key={id} onClick={() => {
             const newBoard = [...board];
+            if (newBoard[id] === 'X' || newBoard[id] === 'O') return
             newBoard[id] = XO;
             setBoard(newBoard);
             XO === 'X' ? setXO('O') : setXO('X');
