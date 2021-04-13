@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <div className="board">
         {board.map((square, id) => {
-          return (<div className={`square square${id}`} key={id} onClick={() => {
+          return (<div className={`square ${square}`} key={id} onClick={() => {
             const newBoard = [...board];
             if (newBoard[id] === 'X' || newBoard[id] === 'O') return
             newBoard[id] = XO;

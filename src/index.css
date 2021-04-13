@@ -23,4 +23,15 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-size: 3rem;
+}
+
+.X {
+    color: red;
+    background-color: rgb(48, 65, 48);
+}
+
+.O {
+    color: green;
+    background-color: rgb(221, 139, 139);
 }
