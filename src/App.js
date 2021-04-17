@@ -15,6 +15,16 @@ function App() {
     [0, 4, 8],
     [2, 4, 6],
   ];
+
+  function calculateWinner(squares) {
+    for(let i=0; i<winnerState.length; i++) {
+      const [a, b, c] = winnerState[i];
+      if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+        return squares[a];
+      }
+    }
+  return null;
+  }
   
   return (
     <div className="App">
@@ -28,10 +38,8 @@ function App() {
             XO === 'X' ? setXO('O') : setXO('X');
           }}> {square} </div>)
         })}
-        {
-          console.log(board)
-          // write a loop to check the winner with the winnerStrate array
-        }
+        {console.log(board)}
+        {console.log(calculateWinner(board))}
       </div>
     </div>
   );
