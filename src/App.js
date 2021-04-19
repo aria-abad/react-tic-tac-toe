@@ -38,7 +38,6 @@ function App() {
             XO === 'X' ? setXO('O') : setXO('X');
           }}> {square} </div>)
         })}
-        {console.log(board)}
         {console.log(calculateWinner(board))}
       </div>
     </div>
