@@ -20,7 +20,8 @@ function App() {
     for(let i=0; i<winnerState.length; i++) {
       const [a, b, c] = winnerState[i];
       if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-        return squares[a];
+        // return squares[a];
+        alert('winner is ' + squares[a]);
       }
     }
   return null;
